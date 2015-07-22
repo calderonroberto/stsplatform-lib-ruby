@@ -66,7 +66,10 @@ All methods rely on the Client Class. The parameter CONF is not required, but al
 A common configuration object is:
 
 ```
-CONF = {url:"http://wotkit.sensetecnic.com/api", auth:{key_id:YOURKEYID,key_password:YOURKEYPASSWORD}}
+CONF = {
+  url:"http://wotkit.sensetecnic.com/api",
+  auth:{key_id:YOURKEYID,key_password:YOURKEYPASSWORD}
+  }
 ```
 
 You can then instantiate your client like this:
