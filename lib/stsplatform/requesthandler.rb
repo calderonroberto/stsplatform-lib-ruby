@@ -4,7 +4,8 @@ require 'json'
 
 module STSPlatform
 
-  #TODO: move classes onto their own files
+  # Main handler of the library. Defines successors in the chain of responsibility
+  # and in our case handles the REST requests to the STS Platform.
   class RequestHandler
     attr_accessor :url, :_successor, :resource, :auth
 

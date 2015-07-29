@@ -1,6 +1,12 @@
 require 'json'
 
 module STSPlatform
+
+  # A custom response object from our library
+  # Params:
+  # +response+:: an Net::HTTP error response
+  # Returns:
+  # +STSPlatformResponse+:: object containing "data" and "code" parameters
   class STSPlatformResponse
     attr_accessor :data, :code
     def initialize(response)

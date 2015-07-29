@@ -1,6 +1,6 @@
 RSpec.configure do |c|
-  c.add_setting :key_id, :default => '' #TODO: Add
-  c.add_setting :key_password, :default => '' #TODO: Add
+  c.add_setting :key_id, :default => '' #TODO: Add your key
+  c.add_setting :key_password, :default => '' #TODO: Add your key
   c.add_setting :random_sensor_name, :default => ('a'..'z').to_a.shuffle[0,8].join
   c.add_setting :existing_sensor_name, :default => 'tests'
   c.add_setting :random_value, :default => rand(0..1000)
